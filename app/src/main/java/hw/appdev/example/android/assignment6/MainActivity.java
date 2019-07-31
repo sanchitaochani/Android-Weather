@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         mIcon = findViewById(R.id.icon);
         mDescription = findViewById(R.id.description);
 
-        Places.initialize(getApplicationContext(),"AIzaSyAIau8IFEx9liE9aJyYyCfy4JQdtQ6ofC4" );
+        Places.initialize(getApplicationContext(),"API_KEY" );
 
         final PlacesClient placesClient = Places.createClient(this);
 
