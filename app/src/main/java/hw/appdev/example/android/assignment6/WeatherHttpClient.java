@@ -8,7 +8,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public class WeatherHttpClient {
-    final String API_KEY = "a46ea223ee11461fbdd10110190305";
+    final String API_KEY = "";
 
 
     private static String BASE_URL = "https://api.worldweatheronline.com/premium/v1/";
@@ -28,7 +28,7 @@ public class WeatherHttpClient {
     }
 
     private interface WeatherService {
-        @GET("weather.ashx?key=a46ea223ee11461fbdd10110190305")
+        @GET("weather.ashx?key=API_KEY")
         Call<ResponseBody> getWeather(@Query("format") String format,
                                       @Query("q") String location,
                                       @Query("date_format") String Date);
